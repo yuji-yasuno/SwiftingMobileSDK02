@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var fullName: UILabel!
-    @IBOutlet weak var organization: UILabel!
     @IBOutlet weak var mail: UILabel!
     
     
@@ -20,7 +19,6 @@ class ViewController: UIViewController {
         
         let user = SFUserAccountManager.sharedInstance().currentUser
         self.fullName.text = user.fullName
-        self.organization.text = user.organizationName
         self.mail.text = user.email
         
     }
